@@ -46,8 +46,6 @@ if [ "$TARGET" = prod ] && [ -n "$(git status --porcelain)" ]; then
   exit 1
 fi
 
-ssh "$HOST" "mkdir -p $DEST"
-
 # Compare by content (-c), since local mtimes come from git checkouts.
 RSYNC=(rsync -rlt -c --exclude=index.json)
 
@@ -83,6 +81,7 @@ if [ "$TARGET" = prod ] && [ $YES = 0 ]; then
 fi
 
 echo "== Uploading"
+ssh "$HOST" "mkdir -p $DEST"
 "${RSYNC[@]}" --info=progress2 pub/ "$HOST:$DEST/"
 rsync -rlt -c pub/index.json "$HOST:$DEST/index.json"
 
