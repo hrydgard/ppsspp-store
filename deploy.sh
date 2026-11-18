@@ -59,8 +59,8 @@ fi
 [ -n "$CHANGES" ] && echo "$CHANGES"
 [ -n "$IDX" ] && echo "$IDX"
 
-# '>f+++++++++' is a new file. Anything else under files/ is an existing zip being replaced.
-REPLACED=$(echo "$CHANGES" | grep '^>f' | grep -v '^>f+++++++++' | grep ' files/' || true)
+# '<f+++++++++' is a new file. Anything else under files/ is an existing zip being replaced.
+REPLACED=$(echo "$CHANGES" | grep '^<f' | grep -v '^<f+++++++++' | grep ' files/' || true)
 if [ -n "$REPLACED" ]; then
   echo
   echo "ERROR: these zips already exist on the server with different content:"
