@@ -9,12 +9,15 @@ https://store.ppsspp.org/. No user uploads.
 
 - `index.json`: the listing. It's the only file the app fetches.
 - `files/<file>.zip`: the downloads.
-- `icons/`: icons referenced by `icon-url`.
+- `icons/`: `<file>_icon0.png` and `<file>_pic1.png`, extracted from the games' EBOOT.PBP
+  by `metadata.py`, and linked by `icon-url` and `pic1-url`.
 - `index.html` and `robots.txt`: for anyone opening the site in a browser.
 
 Tools:
 
 - `check.py`: validates `index.json` against the files.
+- `metadata.py`: reads the title (PARAM.SFO), ICON0 and PIC1 out of the zips' EBOOT.PBP.
+  `--set-urls` writes the images and links them from `index.json`.
 - `deploy.sh dev|prod`: runs the check and uploads.
 
 ## How the app uses it
@@ -37,12 +40,14 @@ fields or change their meaning.
 - `content-rating` 100 or more hides the entry in the iOS App Store build.
 - Don't use `hidden`. Current versions ignore it and old ones handle it badly. Remove the entry
   instead.
+- `pic1-url` is the PSP's PIC1 background image (480x272). The app doesn't use it yet.
 - `category` isn't used by the app yet.
 
 ## Adding or updating a game
 
 1. Repack the zip as `<file>/...` with `EBOOT.PBP` directly inside, and put it in `pub/files/`.
-2. Add an entry to `pub/index.json`. New entries go at the top, since the app lists them in
+2. Add an entry to `pub/index.json`, then run `./metadata.py <file> --set-urls` to extract
+   the icon and background and link them. New entries go at the top, since the app lists them in
    order.
 3. `./check.py`, then `./deploy.sh dev` and test in the app.
 4. Commit, then `./deploy.sh prod`.

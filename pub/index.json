@@ -47,6 +47,7 @@
       "category": "actiongame",
       "website-url": "https://www.cavestory.org",
       "icon-url": "/icons/cavestory_icon0.png",
+      "pic1-url": "/icons/cavestory_pic1.png",
       "file": "cavestory",
       "content-rating": 100,
       "license": "freeware",
@@ -70,6 +71,8 @@
         "description": "A Gravity Force-inspired space game."
       },
       "author": "Abhoth",
+      "icon-url": "/icons/Kosmodrones_icon0.png",
+      "pic1-url": "/icons/Kosmodrones_pic1.png",
       "file": "Kosmodrones",
       "website-url": "https://www.kosmodrones.com",
       "license": "freeware",
@@ -99,6 +102,7 @@
         "description": "A game by daaa."
       },
       "author": "Daaa",
+      "icon-url": "/icons/MegaDrops_icon0.png",
       "file": "MegaDrops",
       "category": "game",
       "website-url": "https://www.gamebrew.org/wiki/Mega_Drops_PSP",
@@ -113,6 +117,7 @@
         "description": "A game by daaa."
       },
       "author": "Daaa",
+      "icon-url": "/icons/MegaDrops2_icon0.png",
       "file": "MegaDrops2",
       "website-url": "https://www.gamebrew.org/wiki/Mega_Drops_2_PSP",
       "license": "freeware",
@@ -127,6 +132,7 @@
         "description": "A tank battle sim."
       },
       "author": "wickles/xfacter",
+      "icon-url": "/icons/bg3_icon0.png",
       "file": "bg3",
       "website-url": "https://github.com/xfacter/battlegrounds3",
       "license": "GPL",
@@ -153,6 +159,7 @@
         "description": "A port of Kenta Cho's PC shooter rRootage."
       },
       "author": "mrbrown, Kenta Cho",
+      "pic1-url": "/icons/rROOTAGE_pic1.png",
       "file": "rROOTAGE",
       "category": "actiongame",
       "icon-url": "/icons/rROOTAGE_icon0.png",
@@ -166,6 +173,7 @@
         "description": "A ground-breaking 4KB demo for the PC, ported to the PSP."
       },
       "author": "Fit && Bandwagon",
+      "pic1-url": "/icons/Yellow_Rose_pic1.png",
       "file": "Yellow_Rose",
       "category": "demoscene",
       "license": "freeware",
@@ -178,6 +186,7 @@
         "description": "A musicdisk - a collection of electronic music as a PSP app."
       },
       "author": "IRIS && Uprough",
+      "pic1-url": "/icons/Planet_Hively_pic1.png",
       "file": "Planet_Hively",
       "category": "demoscene",
       "license": "freeware",
@@ -192,6 +201,7 @@
         "description": "The #1 demo for PSP. Very impressive graphics. A little racy but not very."
       },
       "author": "The Black Lotus",
+      "pic1-url": "/icons/SuicideBarbie_pic1.png",
       "file": "SuicideBarbie",
       "license": "freeware",
       "category": "demoscene",
@@ -224,6 +234,7 @@
       "license": "freeware",
       "icon-url": "/icons/ChuckieEgg_icon0.png",
       "category": "actiongames",
+      "pic1-url": "/icons/ChuckieEgg_pic1.png",
       "file": "ChuckieEgg",
       "content-rating": 100,
       "size": 180238
@@ -267,6 +278,7 @@
       "icon-url": "/icons/LamecraftMod_icon0.png",
       "license": "freeware",
       "category": "actiongames",
+      "pic1-url": "/icons/LamecraftMod_pic1.png",
       "file": "LamecraftMod",
       "content-rating": 100,
       "size": 17887288,
@@ -280,8 +292,9 @@
       "author": "?",
       "website-url": "https://archive.org/details/pspr.-7z",
       "license": "freeware",
-      "icon-url": "",
+      "icon-url": "/icons/PSPRev_v03a_icon0.png",
       "category": "actiongames",
+      "pic1-url": "/icons/PSPRev_v03a_pic1.png",
       "file": "PSPRev_v03a",
       "content-rating": 100,
       "size": 21888247

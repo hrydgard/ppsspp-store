@@ -7,12 +7,14 @@ never remove fields or change what they mean, only add new optional ones.
 """
 import json, os, re, sys, zipfile
 
+from metadata import png_problem
+
 ROOT = os.path.dirname(os.path.abspath(__file__))
 PUB = os.path.join(ROOT, "pub")
 STORE_URL = "https://store.ppsspp.org/"
 
 # Fields the app reads, plus some informational ones that are already in use.
-KNOWN_KEYS = {"file", "author", "size", "download-url", "icon-url", "content-rating",
+KNOWN_KEYS = {"file", "author", "size", "download-url", "icon-url", "pic1-url", "content-rating",
               "website-url", "license", "category", "hidden", "version", "last-updated"}
 LANG_RE = re.compile(r"^[a-z]{2}_[A-Z]{2}$")
 
@@ -139,13 +141,20 @@ def check_entry(e, i, categories, seen_files, referenced):
                 err(f"{where}: size is {size}, but the zip is {os.path.getsize(zpath)} bytes")
             check_zip(zpath, f, where)
 
-    icon = e.get("icon-url")
-    if icon:
-        ipath = local_path(icon)
-        if ipath:
-            referenced.add(os.path.normpath(ipath))
-            if not os.path.exists(ipath):
-                err(f"{where}: icon {icon} missing")
+    # icon-url is shown by the app. pic1-url (the PSP's PIC1 background) isn't used yet.
+    for field in ("icon-url", "pic1-url"):
+        url = e.get(field)
+        if not url:
+            continue
+        ipath = local_path(url)
+        if not ipath:
+            continue
+        if not os.path.exists(ipath):
+            err(f"{where}: {field} {url} missing")
+        else:
+            prob = png_problem(open(ipath, "rb").read())
+            if prob:
+                err(f"{where}: {field} {url} is broken: {prob}")
 
 
 def main():
