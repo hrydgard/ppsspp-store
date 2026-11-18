@@ -1,0 +1,290 @@
+{
+  "type": "PPSSPP Store",
+  "version": "1",
+
+  "categories": {
+    "actiongame": {
+      "en_US": {
+        "name": "Action Games"
+      },
+      "sv_SE": {
+        "name": "Actionspel"
+      }
+    },
+    "puzzlegame": {
+      "en_US": {
+        "name": "Puzzle Games"
+      },
+      "sv_SE": {
+        "name": "Pusselspel"
+      }
+    },
+    "util": {
+      "en_US": {
+        "name": "Utilities"
+      },
+      "sv_SE": {
+        "name": "Verktyg"
+      }
+    },
+    "demoscene": {
+      "en_US": {
+        "name": "Demoscene (non-interactive)"
+      }
+    }
+  },
+
+  "entries": [
+    {
+      "en_US": {
+        "name": "Cave Story",
+        "description": "A fun Japanese action/platformer/RPG, ported to the PSP by ufo_z."
+      },
+      "sv_SE": {
+        "description": "Ett roligt japanskt action/platform/RPG-spel."
+      },
+      "author": "Studio Pixel",
+      "category": "actiongame",
+      "website-url": "https://www.cavestory.org",
+      "icon-url": "/icons/cavestory_icon0.png",
+      "file": "cavestory",
+      "content-rating": 100,
+      "license": "freeware",
+      "size": 1859131
+    },
+    {
+      "en_US": {
+        "name": "Ozone",
+        "description": "Ozone is a mix of an action game and a puzzle game where you have to find all the blue gems in labyrinth-style levels without losing your air."
+      },
+      "author": "Helius",
+      "category": "actiongame",
+      "website-url": "https://www.dcemu.co.uk/vbulletin/threads/68208-Release-Ozone-PSP",
+      "license": "freeware",
+      "file": "Ozone",
+      "size": 37225619
+    },
+    {
+      "en_US": {
+        "name": "Kosmodrones",
+        "description": "A Gravity Force-inspired space game."
+      },
+      "author": "Abhoth",
+      "file": "Kosmodrones",
+      "website-url": "https://www.kosmodrones.com",
+      "license": "freeware",
+      "category": "game",
+      "size": 46533166,
+      "hidden": false
+    },
+    {
+      "en_US": {
+        "name": "Webfest",
+        "description": "A tempest clone."
+      },
+      "author": "James Higgs",
+      "version": "1.2",
+      "last-updated": "2024-09-01",
+      "file": "webfest",
+      "website-url": "https://jum.pdroms.de/PSP/pspprog.html",
+      "license": "freeware",
+      "category": "game",
+      "size": 420960,
+      "content-rating": 100,
+      "hidden": false
+    },
+    {
+      "en_US": {
+        "name": "Mega Drops",
+        "description": "A game by daaa."
+      },
+      "author": "Daaa",
+      "file": "MegaDrops",
+      "category": "game",
+      "website-url": "https://www.gamebrew.org/wiki/Mega_Drops_PSP",
+      "license": "freeware",
+      "size": 16035486,
+      "content-rating": 100,
+      "hidden": false
+    },
+    {
+      "en_US": {
+        "name": "Mega Drops 2",
+        "description": "A game by daaa."
+      },
+      "author": "Daaa",
+      "file": "MegaDrops2",
+      "website-url": "https://www.gamebrew.org/wiki/Mega_Drops_2_PSP",
+      "license": "freeware",
+      "category": "game",
+      "size": 58819599,
+      "content-rating": 100,
+      "hidden": false
+    },
+    {
+      "en_US": {
+        "name": "Battlegrounds 3",
+        "description": "A tank battle sim."
+      },
+      "author": "wickles/xfacter",
+      "file": "bg3",
+      "website-url": "https://github.com/xfacter/battlegrounds3",
+      "license": "GPL",
+      "category": "game",
+      "size": 2789524,
+      "content-rating": 100,
+      "hidden": false
+    },
+    {
+      "en_US": {
+        "name": "PSP-Flower",
+        "description": "A nice audiovisual experience. Bonus: Press X."
+      },
+      "author": "Moppi Productions",
+      "file": "flower",
+      "category": "demoscene",
+      "license": "freeware",
+      "website-url": "https://www.pouet.net/prod.php?which=19256",
+      "size": 2057480
+    },
+    {
+      "en_US": {
+        "name": "rROOTAGE",
+        "description": "A port of Kenta Cho's PC shooter rRootage."
+      },
+      "author": "mrbrown, Kenta Cho",
+      "file": "rROOTAGE",
+      "category": "actiongame",
+      "icon-url": "/icons/rROOTAGE_icon0.png",
+      "website-url": "https://www.asahi-net.or.jp/~cs8k-cyu/windows/rr_e.html",
+      "license": "freeware",
+      "size": 4437396
+    },
+    {
+      "en_US": {
+        "name": "Yellow Rose of Texas",
+        "description": "A ground-breaking 4KB demo for the PC, ported to the PSP."
+      },
+      "author": "Fit && Bandwagon",
+      "file": "Yellow_Rose",
+      "category": "demoscene",
+      "license": "freeware",
+      "icon-url": "/icons/Yellow_Rose_icon0.png",
+      "size": 199642
+    },
+    {
+      "en_US": {
+        "name": "Planet Hively",
+        "description": "A musicdisk - a collection of electronic music as a PSP app."
+      },
+      "author": "IRIS && Uprough",
+      "file": "Planet_Hively",
+      "category": "demoscene",
+      "license": "freeware",
+      "website-url": "http://www.pouet.net/prod.php?which=49931",
+      "icon-url": "/icons/Planet_Hively_icon0.png",
+      "content-rating": 100,
+      "size": 263431
+    },
+    {
+      "en_US": {
+        "name": "Suicide Barbie",
+        "description": "The #1 demo for PSP. Very impressive graphics. A little racy but not very."
+      },
+      "author": "The Black Lotus",
+      "file": "SuicideBarbie",
+      "license": "freeware",
+      "category": "demoscene",
+      "website-url": "http://www.pouet.net/prod.php?which=30284",
+      "icon-url": "/icons/SuicideBarbie_icon0.png",
+      "content-rating": 100,
+      "size": 24335369
+    },
+    {
+      "en_US": {
+        "name": "TrigWars PSP",
+        "description": "A fast paced action game inspired by Geometry Wars."
+      },
+      "author": "7IM",
+      "website-url": "https://www.gamebrew.org/wiki/TrigWars_PSP",
+      "license": "freeware",
+      "icon-url": "",
+      "category": "actiongames",
+      "file": "TrigWars",
+      "content-rating": 100,
+      "size": 610881
+    },
+    {
+      "en_US": {
+        "name": "Chuckie Egg",
+        "description": "A classic BBC B Micro game, rewritten for the PSP."
+      },
+      "author": "Richard Rose",
+      "website-url": "https://www.gamebrew.org/wiki/Chuckie_Egg_PSP_by_Richard_Rose",
+      "license": "freeware",
+      "icon-url": "/icons/ChuckieEgg_icon0.png",
+      "category": "actiongames",
+      "file": "ChuckieEgg",
+      "content-rating": 100,
+      "size": 180238
+    },
+    {
+      "en_US": {
+        "name": "Breakout",
+        "description": "A breakout clone."
+      },
+      "author": "Jairo David",
+      "website-url": "",
+      "license": "freeware",
+      "icon-url": "/icons/Breakout_icon0.png",
+      "category": "actiongames",
+      "file": "Breakout",
+      "content-rating": 100,
+      "size": 1123024,
+      "hidden": true
+    },
+    {
+      "en_US": {
+        "name": "Attack of the Mutants",
+        "description": "Shoot-em up."
+      },
+      "author": "DeNitro",
+      "license": "freeware",
+      "website-url": "",
+      "icon-url": "",
+      "category": "actiongames",
+      "file": "AOTM",
+      "size": 5580927,
+      "hidden": true
+    },
+    {
+      "en_US": {
+        "name": "LamecraftMod",
+        "description": "A fairly simple Minecraft clone."
+      },
+      "author": "?",
+      "website-url": "",
+      "icon-url": "/icons/LamecraftMod_icon0.png",
+      "license": "freeware",
+      "category": "actiongames",
+      "file": "LamecraftMod",
+      "content-rating": 100,
+      "size": 17887288,
+      "hidden": true
+    },
+    {
+      "en_US": {
+        "name": "PSP Revolution",
+        "description": "A DDR clone for PSP"
+      },
+      "author": "?",
+      "website-url": "https://archive.org/details/pspr.-7z",
+      "license": "freeware",
+      "icon-url": "",
+      "category": "actiongames",
+      "file": "PSPRev_v03a",
+      "content-rating": 100,
+      "size": 21888247
+    }
+  ]
+}
